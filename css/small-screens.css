@@ -1,3 +1,6 @@
 #last-news article div img{
   width: 258px;
 }
+#more-stories > article > div > img {
+  width: 258px;
+}

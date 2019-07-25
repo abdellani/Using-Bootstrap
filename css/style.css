@@ -479,6 +479,11 @@ body>header>nav>div>form>a {
   background-color: red;
   margin-top: -5px;
 }
+.section-title > h3{
+  padding-left: 5px; 
+  font: bold 19px/19px "Roboto Condensed",sans-serif !important;
+}
+
 .section-title > div>img{
   height: 25px!important;
   width: 25px!important;

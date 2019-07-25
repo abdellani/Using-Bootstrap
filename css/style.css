@@ -317,6 +317,7 @@ body>header>nav>div>form>a {
   padding:20px;
   max-width: 300px;
   margin: auto ;
+  margin-top: 10px;
 }
 #newsletter-singup div:first-of-type div{
   background-color: #f72210;
@@ -345,10 +346,67 @@ body>header>nav>div>form>a {
   padding:10px;
   font-weight: bold;
   margin-bottom: 5px;
+
 }
 #newsletter-singup>p{
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
 
+}
+
+#part-2{
+  margin-top:10px;
+}
+#part-2 img{
+  width:100%;
+  height: 290px;
+}
+#part-2 > div:first-child > article:first-child img{
+  height: 387px;
+} 
+
+#part-2 article>div:first-of-type{
+  position: relative;
+}
+#part-2 article>div:first-of-type p{
+  position: absolute;
+  bottom: 0;
+  font-size: bolder;
+  background: white;
+  color:red;
+  margin-bottom:0; 
+  width: 100%;
+  padding-top: 10px;
+}
+#part-2 article>div:first-of-type p span{
+  background: red;
+  color: white;
+  margin: 0;
+  padding-right:5px; 
+  display: inline-block;
+}
+#part-2  h3{
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bolder;
+  font-family: "Roboto Condensed",sans-serif;
+  margin-top:10px;
+}
+#section-2-logo img{
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  margin-top:-5px;
+}
+
+#part-2 >div:first-of-type> article>div>p{
+  background-color: #efefef;
+  width: auto;
+  padding: 5px;
+}
+#part-2 >div:first-of-type> article>h3{
+  margin-top: 0;
+  padding: 5px;
+  text-align: center;
 }

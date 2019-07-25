@@ -4,3 +4,15 @@
 #more-stories > article > div > img {
   width: 258px;
 }
+
+#part-2 > div:first-child > article:first-child img{
+  height: 100%;
+} 
+#part-2 img{
+  height:100%;
+} 
+
+#part-2 article h3{
+  font-size: 16px;
+  line-height: 16px;
+}

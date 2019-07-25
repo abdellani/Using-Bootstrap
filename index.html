@@ -9,10 +9,10 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/xsmall-screens.css" media="screen and (max-width: 576px)">
-  <link rel="stylesheet" href="css/small-screens.css" media="screen and (max-width: 768px)">
-  <link rel="stylesheet" href="css/medium-screens.css" media="screen and (max-width: 992px)">
   <link rel="stylesheet" href="css/large-screens.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="css/medium-screens.css" media="screen and (max-width: 992px)">
+  <link rel="stylesheet" href="css/small-screens.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="css/xsmall-screens.css" media="screen and (max-width: 576px)">
   
   <title>
     Using Bootstrap
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <header class="container-fluid">
+  <header id="header" class="container-fluid">
     <div id="header-div" class="d-flex justify-content-between align-items-end">
       <p class="">
         Tue, Jul 23, 2019
@@ -90,7 +90,7 @@
   </header>
   <main class="container-fluid">
     <div id="part-1" class="row">
-      <section id="feature-stories" class="col-sm-12 col-md-6 col-lg-4">
+      <section id="feature-stories" class="col-sm-12 order-md-first col-md-6 col-lg-4">
         <h2>FEATURED STORIES</h2>
         <article>
           <div>
@@ -126,7 +126,7 @@
           </p>
         </article>
       </section>
-      <section class="col-sm-12 col-md-6 col-lg-5">
+      <section class="col-sm-12 order-first col-md-6 col-lg-5">
         <div id="top-story">
           <h2>Top Story</h2>
           <article>
@@ -141,7 +141,7 @@
             </p>
           </article>
         </div>
-        <div id="culture-n-travel" class="container">
+        <div id="culture-n-travel" class="container-fluid">
           <h2>Culture & Travel</h2>
           <div class="row">
             <article class="col-md-6">

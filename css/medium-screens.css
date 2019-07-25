@@ -1,0 +1,15 @@
+#feature-stories article div:first-child{
+  width: 100%;
+}
+#feature-stories article div:first-child img{
+  width: 100%;
+}
+#more-stories > article{
+  padding-bottom: 10px;
+}
+#more-stories > article > div > img{
+  width: 258px;
+}
+#opinion article{
+  padding-bottom: 10px;
+}

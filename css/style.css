@@ -438,7 +438,7 @@ body>header>nav>div>form>a {
 
 
 .article>h3 {
-  font-size: 24px;
+  font-size: 21px;
   line-height: 24px;
   text-transform: capitalize;
   font-family: "Roboto Condensed", sans-serif;
@@ -487,4 +487,21 @@ body>header>nav>div>form>a {
 .section-title > div>img{
   height: 25px!important;
   width: 25px!important;
+}
+
+.section-header{
+  color:#f72210;
+  font-family: "Roboto Condensed",sans-serif ;
+  font-weight: bolder;
+  font-size: 21px;
+}
+.side-article p{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bolder;
+  padding-left: 10px;
+  color:black;
+}
+.side-article img {
+  height: 90px;
+  width: 135px;
 }

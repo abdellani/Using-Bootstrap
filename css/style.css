@@ -8,7 +8,6 @@ body {
 }
 
 body>header {
-  background-color: white;
   color: white;
   max-width: 1320px;
   margin-bottom: 15px;
@@ -400,7 +399,6 @@ body>header>nav>div>form>a {
 #part-2 article>div:first-of-type p {
   position: absolute;
   bottom: 0;
-  font-size: bolder;
   background: white;
   color: red;
   margin-bottom: 0;

@@ -525,8 +525,6 @@ body>header>nav>div>form>a {
 }
 #part11-briefing {
   box-sizing: border-box;
-  /* width: 52%; */
-  /* margin: 0; */
   padding: 10px;
 }
 .part11-paragraph{
@@ -560,4 +558,43 @@ body>header>nav>div>form>a {
 
 #part-11-magazine-subscribe{
   padding: 10px;
+}
+
+#footer-logo{
+  height: 36px;
+  width: 237px;
+}
+footer{
+  background-color: white;
+  max-width: 1320px;
+
+}
+footer>div{
+  color:#666666;
+  width: 95%;
+  margin: auto;
+}
+#footer-social-media{
+  font-size: 24px;
+}
+#copyright{
+  font-size: 13px;
+}
+
+footer ul{
+   list-style: none;
+   margin-bottom: 0;
+   padding-left:0 !important;
+}
+footer ul li{
+  display: inline-block;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+#footer-links{
+  margin: auto;
+}
+#editions{
+  font-weight:bolder;
+  float: left; 
 }

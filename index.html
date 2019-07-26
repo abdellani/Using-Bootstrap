@@ -21,12 +21,12 @@
 
 <body>
   <header id="header" class="container-fluid">
-    <div id="header-div" class="d-flex justify-content-between align-items-end">
+    <div id="header-div" class="d-flex flex-wrap  justify-content-between align-items-end">
       <p class="">
         Tue, Jul 23, 2019
       </p>
-      <img class="" src="images/logo.svg">
-      <div class="">
+      <img src="images/logo.svg">
+      <div class="d-flex justify-content-end ml-2">
         <a href="#">
           sign in
         </a>
@@ -912,7 +912,7 @@
         </div>
       </div>
     </section>
-    <section id="part-11" class="container-fluid mb-4 pb-4 border-bottom">
+    <section id="part-11" class="container-fluid pb-4 border-bottom">
       <div class="row">
         <div class="col-lg-7 col-xl-8 mb-4 container-fluid">
           <h2 class="section-header">SUBSCRIBE</h2>
@@ -926,7 +926,7 @@
                 In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
               </h3>
               <p class="part11-paragraph">
-                All Access + Weekly Delivery.<br/>
+                All Access + Weekly Delivery.<br />
                 Choose A Membership That's Perfect for You!
               </p>
               <button class="mag-button">
@@ -957,8 +957,48 @@
     </section>
 
   </main>
-  <footer>
-
+  <footer class="pb-4 pt-4 border-bottom container-fluid">
+    <div class="pb-2 border-bottom d-flex flex-column flex-md-row justify-content-md-between align-items-baseline ">
+      <div class="d-flex align-items-baseline flex-column flex-md-row">
+        <img id="footer-logo" class="mr-1" src="./images/logo-red.svg">
+        <span id="copyright">© 2019 NEWSWEEK</span>
+      </div>
+      <div id="footer-social-media" class="">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tumblr"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+    <div id="footer-links" class="row">
+      <ul class="col-lg-8 d-flex flex-wrap mt-2">
+        <li class="border-right">About Us</li>
+        <li class="border-right">Corrections</li>
+        <li class="border-right">Contact Us</li>
+        <li class="border-right">Editorial Guidelines</li>
+        <li class="border-right">Advertise</li>
+        <li class="border-right">Copyright</li>
+        <li class="border-right">Terms & Conditions</li>
+        <li class="border-right">Privacy Policy</li>
+        <li class="border-right">Cookie Policy</li>
+        <li class="border-right">Terms of Sale</li>
+        <li class="border-right">Archive</li>
+        <li class="border-right">Announcements</li>
+        <li class="border-right">Consent preferences</li>
+      </ul>
+      <div class="col-lg-4 mt-2">
+        <p id="editions">Editions:</p>
+        <ul class=" d-flex flex-wrap ">
+          <li class="border-right">U.S. Edition</li>
+          <li class="border-right">日本</li>
+          <li class="border-right">한국</li>
+          <li class="border-right">Pakistan</li>
+          <li class="border-right">Polska</li>
+          <li class="border-right">România</li>
+      </div>
+      </ul>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

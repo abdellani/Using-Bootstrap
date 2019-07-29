@@ -1,18 +1,1015 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>
-        Using Bootstrap
-    </title>
-  </head>
-  <body>
-    
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/large-screens.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="css/medium-screens.css" media="screen and (max-width: 992px)">
+  <link rel="stylesheet" href="css/small-screens.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="css/xsmall-screens.css" media="screen and (max-width: 576px)">
+
+  <title>
+    Using Bootstrap
+  </title>
+</head>
+
+<body>
+  <header id="header" class="container-fluid">
+    <div id="header-div" class="d-flex flex-wrap  justify-content-between align-items-end">
+      <p class="">
+        Tue, Jul 23, 2019
+      </p>
+      <img alt="article" src="images/logo.svg">
+      <div class="d-flex justify-content-end ml-2">
+        <a href="#">
+          sign in
+        </a>
+        <a href="#">
+          subscribe <i class="fas fa-angle-right"></i>
+        </a>
+        <button id="navbar-toggler" onclick="updateToggleNavbarButton()" class="navbar-toggler" type="button"
+          data-toggle="collapse" data-toggled="true" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+
+        </button>
+      </div>
+    </div>
+
+    <nav id="header-navbar" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mt-2 mt-lg-0">
+          <li class="nav-item d-flex justify-content-between">
+            <a class="nav-link text-dark" href="#">U.S. </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link  text-dark" href="#">World </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link  text-dark" href="#">Business </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link  text-dark" href="#">Tech & Science </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link  text-dark" href="#">Culture </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link  text-dark" href="#">Sports </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link  text-dark" href="#">Health </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link  text-dark" href="#">Opinion </a>
+            <span class="ml-4 border-right"></span>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link text-dark" href="#">Vantage </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </form>
+      </div>
+      <div id="red-trapezoid"></div>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <div id="part-1" class="row">
+      <section id="feature-stories" class="col-sm-12 order-md-first col-md-6 col-lg-4">
+        <h2>FEATURED STORIES</h2>
+        <article>
+          <div>
+            <p> Analysis</p>
+            <img alt="article" src="images/div1/article1.png">
+          </div>
+          <h3><a href="#">The Newsweek Momentum Awards</a></h3>
+          <p>
+            The Newsweek Momentum Awards will recognize five individuals around the globe, as well as one city, which
+            will be chosen as the "smartest city in the world."
+          </p>
+        </article>
+        <article>
+          <div>
+            <p> Analysis</p>
+            <img alt="article" src="images/div1/article1.png">
+          </div>
+          <h3>The Newsweek Momentum Awards</h3>
+          <p>
+            The Newsweek Momentum Awards will recognize five individuals around the globe, as well as one city, which
+            will be chosen as the "smartest city in the world."
+          </p>
+        </article>
+        <article>
+          <div>
+            <p> Analysis</p>
+            <img alt="article" src="images/div1/article1.png">
+          </div>
+          <h3><a href="#">The Newsweek Momentum Awards</a></h3>
+          <p>
+            The Newsweek Momentum Awards will recognize five individuals around the globe, as well as one city, which
+            will be chosen as the "smartest city in the world."
+          </p>
+        </article>
+      </section>
+      <section class="col-sm-12 order-first col-md-6 col-lg-5">
+        <div id="top-story">
+          <h2>Top Story</h2>
+          <article>
+            <div>
+              <p>U.S.</p>
+              <img alt="top story" src="./images/div1/top-story.jpg">
+            </div>
+            <h3>Live Updates: Mueller Testifies in Back-to-Back Congressional Hearings</h3>
+            <p>
+              Here's all you need to know about special counsel Robert Mueller's testimony Wednesday in front of the
+              House Judiciary Committee and House Intelligence Committee.
+            </p>
+          </article>
+        </div>
+        <div id="culture-n-travel" class="container-fluid">
+          <h2>Culture & Travel</h2>
+          <div class="row">
+            <article class="col-md-6">
+              <img alt="article" src="images/div1/culture-and-travel-1.jpg">
+              <h3>10 Best Cities for Business Travel</h3>
+              <p>
+                These cities have it all: great airports, access to comfortable and affordable accommodation, public
+                transport and fun things to do in the off hours.
+              </p>
+              <p>
+                Travel
+              </p>
+            </article>
+            <article class="col-md-6">
+              <img alt="article" src="images/div1/culture-and-travel-1.jpg">
+              <h3>10 Best Cities for Business Travel</h3>
+              <p>
+                These cities have it all: great airports, access to comfortable and affordable accommodation, public
+                transport and fun things to do in the off hours.
+              </p>
+              <p>
+                Travel
+              </p>
+            </article>
+            <article class="col-md-6">
+              <img alt="article" src="images/div1/culture-and-travel-1.jpg">
+              <h3>10 Best Cities for Business Travel</h3>
+              <p>
+                These cities have it all: great airports, access to comfortable and affordable accommodation, public
+                transport and fun things to do in the off hours.
+              </p>
+              <p>
+                Travel
+              </p>
+            </article>
+            <article class="col-md-6">
+              <img alt="article" src="images/div1/culture-and-travel-1.jpg">
+              <h3>10 Best Cities for Business Travel</h3>
+              <p>
+                These cities have it all: great airports, access to comfortable and affordable accommodation, public
+                transport and fun things to do in the off hours.
+              </p>
+              <p>
+                Travel
+              </p>
+            </article>
+          </div>
+        </div>
+        <div id="more-stories">
+          <h2>MORE STORIES</h2>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/more-stories-1.jpg">
+            </div>
+            <div>
+              <h4>Puerto Rico Governor Expected to Resign as Protests Continue</h4>
+              <p>
+                Governor Ricardo Rosselló is likely to quit after more than a week of protests, with Justice Secretary
+                Wanda Vázquez Garced expected to take over.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="col-sm-12 col-lg-3">
+        <div id="opinion">
+          <h2>OPINION</h2>
+          <article class="d-flex border-bottom">
+            <div>
+              <img alt="article" src="images/div1/opinion-1.png">
+
+            </div>
+            <div>
+              <p>
+                Trump and Johnson Are Liked Precisely Because They Get Away With Anything
+              </p>
+              <p>
+                By James A. Smith
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-bottom">
+            <div>
+              <img alt="article" src="images/div1/opinion-1.png">
+            </div>
+            <div>
+              <p>
+                Trump and Johnson Are Liked Precisely Because They Get Away With Anything
+              </p>
+              <p>
+                By James A. Smith
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-bottom">
+            <div>
+              <img alt="article" src="images/div1/opinion-1.png">
+            </div>
+            <div>
+              <p>
+                Trump and Johnson Are Liked Precisely Because They Get Away With Anything
+              </p>
+              <p>
+                By James A. Smith
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-bottom">
+            <div>
+              <img alt="article" src="images/div1/opinion-1.png">
+            </div>
+            <div>
+              <p>
+                Trump and Johnson Are Liked Precisely Because They Get Away With Anything
+              </p>
+              <p>
+                By James A. Smith
+              </p>
+            </div>
+          </article>
+          <article class="d-flex border-bottom">
+            <div>
+              <img alt="article" src="images/div1/opinion-1.png">
+            </div>
+            <div>
+              <p>
+                Trump and Johnson Are Liked Precisely Because They Get Away With Anything
+              </p>
+              <p>
+                By James A. Smith
+              </p>
+            </div>
+          </article>
+          <article class="d-flex">
+            <div>
+              <img alt="article" src="images/div1/opinion-1.png">
+            </div>
+            <div>
+              <p>
+                Trump and Johnson Are Liked Precisely Because They Get Away With Anything
+              </p>
+              <p>
+                By James A. Smith
+              </p>
+            </div>
+          </article>
+        </div>
+        <div id="last-news">
+          <h2>LATEST NEWS</h2>
+          <article class="d-flex">
+            <div>
+              <img alt="article" src="images/div1/last-news-1.jpg">
+            </div>
+            <p>Anna Wintour Avoids Question About Melania Trump's Style</p>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/last-news-1.jpg">
+            </div>
+            <p>Anna Wintour Avoids Question About Melania Trump's Style</p>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/last-news-1.jpg">
+            </div>
+            <p>Anna Wintour Avoids Question About Melania Trump's Style</p>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/last-news-1.jpg">
+            </div>
+            <p>Anna Wintour Avoids Question About Melania Trump's Style</p>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/last-news-1.jpg">
+            </div>
+            <p>Anna Wintour Avoids Question About Melania Trump's Style</p>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/last-news-1.jpg">
+            </div>
+            <p>Anna Wintour Avoids Question About Melania Trump's Style</p>
+          </article>
+          <article class="d-flex border-top">
+            <div>
+              <img alt="article" src="images/div1/last-news-1.jpg">
+            </div>
+            <p>Anna Wintour Avoids Question About Melania Trump's Style</p>
+          </article>
+        </div>
+        <div id="newsletter-singup">
+          <div class="d-flex align-items-center">
+            <div>
+              <img alt="article" src="images/div1/logo-n1.svg">
+            </div>
+            <h3>Sign up for our Newsletter</h3>
+          </div>
+          <button>SING UP <i class="fas fa-angle-right"></i></button>
+          <p>
+            Update your preferences »
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section id="part-2" class="container-fluid">
+      <div class="row">
+        <article class="col-md-3">
+          <div>
+            <img alt="article" src="images/div2/magazine-cover.jpg">
+            <p>JULY 26 ISSUE</p>
+          </div>
+          <h3 class="bg-light">
+            SEE ALL FEATURES <i class="fas fa-angle-right"></i>
+          </h3>
+        </article>
+        <div class="col-md-9 container-fluid">
+          <div class="row justify-content-center">
+            <div
+              class="section-title col-md-12 border-bottom mb-4 pb-1 text-center d-flex align-items-center justify-content-center">
+              <div>
+                <img alt="article" src="images/div1/logo-n1.svg">
+              </div>
+              <h3> IN THE MAGAZINE
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <article class="col-md-4">
+              <div>
+                <img alt="article" src="images/div2/article1.jpg">
+                <p><span>Cover</span> Health</p>
+              </div>
+              <h3>
+                Precision Medicine Is Crushing Once-Untreatable Cancers
+              </h3>
+            </article>
+            <article class="col-md-4">
+              <div>
+                <img alt="article" src="images/div2/article1.jpg">
+                <p><span>Cover</span> Health</p>
+              </div>
+              <h3>
+                Precision Medicine Is Crushing Once-Untreatable Cancers
+              </h3>
+            </article>
+            <article class="col-md-4">
+              <div>
+                <img alt="article" src="images/div2/article1.jpg">
+                <p><span>Cover</span> Health</p>
+              </div>
+              <h3>
+                Precision Medicine Is Crushing Once-Untreatable Cancers
+              </h3>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <article class="col-md-3">
+          <div>
+            <img alt="article" src="images/div2/article1.jpg">
+            <p><span>Cover</span> Health</p>
+          </div>
+          <h3>
+            Precision Medicine Is Crushing Once-Untreatable Cancers
+          </h3>
+        </article>
+        <article class="col-md-3">
+          <div>
+            <img alt="article" src="images/div2/article1.jpg">
+            <p><span>Cover</span> Health</p>
+          </div>
+          <h3>
+            Precision Medicine Is Crushing Once-Untreatable Cancers
+          </h3>
+        </article>
+        <article class="col-md-3">
+          <div>
+            <img alt="article" src="images/div2/article1.jpg">
+            <p><span>Cover</span> Health</p>
+          </div>
+          <h3>
+            Precision Medicine Is Crushing Once-Untreatable Cancers
+          </h3>
+        </article>
+        <article class="col-md-3">
+          <div>
+            <img alt="article" src="images/div2/article1.jpg">
+            <p><span>Cover</span> Health</p>
+          </div>
+          <h3>
+            Precision Medicine Is Crushing Once-Untreatable Cancers
+          </h3>
+        </article>
+      </div>
+    </section>
+    <section id="part-3" class="container-fluid">
+      <div class="row justify-content-center">
+        <div
+          class="section-title col-md-12 border-bottom mb-4 pb-1 text-center d-flex align-items-center justify-content-center">
+          <div>
+            <img alt="article" src="images/div1/logo-n1.svg">
+          </div>
+          <h3> EDITOR'S PICK
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+      </div>
+      <div class="row">
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+        <article class="article col-md-6 col-lg-3">
+          <div>
+            <img alt="article" src="./images/div3/article.jpg" />
+            <p>politics</p>
+          </div>
+          <h3>'Book Better Than The Movie': journalists focus on mueller 'Performance'</h3>
+          <p>
+            Dozens of journalists invoked a classic snobby line of attempted high-brow crticism, comparing former
+            special counsel Robert Mueller's "unexciting" Wednesday testimony to a book that's better than the movie.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="part-4" class="container-fluid">
+      <div class="row justify-content-center">
+        <div
+          class=" col-md-12 border-bottom mb-4 pb-1 text-center d-flex align-items-center justify-content-center section-title">
+          <div>
+            <img alt="article" src="images/div1/logo-n1.svg">
+          </div>
+          <h3> FEATURED SLIDESHOWS
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="./images/div4/article.jpg">
+            <p><i class="fas fa-desktop"></i></p>
+          </div>
+          <h3>How to Survive a Walking Safari in Africa</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="./images/div4/article.jpg">
+            <p><i class="fas fa-desktop"></i></p>
+          </div>
+          <h3>How to Survive a Walking Safari in Africa</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="./images/div4/article.jpg">
+            <p><i class="fas fa-desktop"></i></p>
+          </div>
+          <h3>How to Survive a Walking Safari in Africa</h3>
+        </article>
+      </div>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="./images/div4/article.jpg">
+            <p><i class="fas fa-desktop"></i></p>
+          </div>
+          <h3>How to Survive a Walking Safari in Africa</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="./images/div4/article.jpg">
+            <p><i class="fas fa-desktop"></i></p>
+          </div>
+          <h3>How to Survive a Walking Safari in Africa</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="./images/div4/article.jpg">
+            <p><i class="fas fa-desktop"></i></p>
+          </div>
+          <h3>How to Survive a Walking Safari in Africa</h3>
+        </article>
+      </div>
+    </section>
+    <section id="part-5" class="container-fluid border-top pt-4 mt-4">
+      <h2 class="section-header">U.S.</h2>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div5/article.jpg">
+          </div>
+          <h3>#ClintonBodyCount Trend Emerges after Epstein Suicide Attempt Reports</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div5/article.jpg">
+          </div>
+          <h3>#ClintonBodyCount Trend Emerges after Epstein Suicide Attempt Reports</h3>
+        </article>
+        <div class="col-md-4 d-flex flex-column">
+          <div class="d-flex flex-row border-bottom pb-2 side-article">
+            <div><img alt="article" src="./images/div5/side-article.jpg"></div>
+            <p>
+              Lin-Manuel Miranda's Father Shares Heartwarming Photo After Gov. Resigns
+            </p>
+          </div>
+          <div class="d-flex flex-row border-bottom pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div5/side-article.jpg"></div>
+            <p>
+              Lin-Manuel Miranda's Father Shares Heartwarming Photo After Gov. Resigns
+            </p>
+          </div>
+          <div class="d-flex flex-row  pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div5/side-article.jpg"></div>
+            <p>
+              Lin-Manuel Miranda's Father Shares Heartwarming Photo After Gov. Resigns
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="part-6" class="container-fluid border-top pt-4 mt-4">
+      <h2 class="section-header">World</h2>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div6/article.jpg">
+          </div>
+          <h3>Russia-Ukraine Tensions Back As Tanker Feuds Spread from Mideast to Europe</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div6/article.jpg">
+          </div>
+          <h3>Russia-Ukraine Tensions Back As Tanker Feuds Spread from Mideast to Europe</h3>
+        </article>
+        <div class="col-md-4 d-flex flex-column">
+          <div class="d-flex flex-row border-bottom pb-2 side-article">
+            <div><img alt="article" src="./images/div6/side-article.jpg"></div>
+            <p>
+              Photo Shows Migrant Mother Pleading With Soldier to Let Them Reach U.S.
+            </p>
+          </div>
+          <div class="d-flex flex-row border-bottom pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div6/side-article.jpg"></div>
+            <p>
+              Photo Shows Migrant Mother Pleading With Soldier to Let Them Reach U.S.
+            </p>
+          </div>
+          <div class="d-flex flex-row pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div6/side-article.jpg"></div>
+            <p>
+              Photo Shows Migrant Mother Pleading With Soldier to Let Them Reach U.S.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part-7" class="container-fluid border-top pt-4 mt-4">
+      <h2 class="section-header">Business</h2>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div7/article.png">
+          </div>
+          <h3>When You Can't Play By The Rules, Become an Entrepreneur</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div7/article.png">
+          </div>
+          <h3>When You Can't Play By The Rules, Become an Entrepreneur</h3>
+        </article>
+        <div class="col-md-4 d-flex flex-column">
+          <div class="d-flex flex-row border-bottom pb-2 side-article">
+            <div><img alt="article" src="./images/div7/side-article.jpg"></div>
+            <p>
+              Nearly Half of Fortune 500 Companies Founded By Immigrant Families: Study
+            </p>
+          </div>
+          <div class="d-flex flex-row border-bottom pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div7/side-article.jpg"></div>
+            <p>
+              Nearly Half of Fortune 500 Companies Founded By Immigrant Families: Study
+            </p>
+          </div>
+          <div class="d-flex flex-row pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div7/side-article.jpg"></div>
+            <p>
+              Nearly Half of Fortune 500 Companies Founded By Immigrant Families: Study
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part-8" class="container-fluid border-top pt-4 mt-4">
+      <h2 class="section-header">Tech & Science</h2>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div8/article.jpg">
+          </div>
+          <h3>Scientists Can Predict Your Personality From How You Move Your Smartphone</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div8/article.jpg">
+          </div>
+          <h3>Scientists Can Predict Your Personality From How You Move Your Smartphone</h3>
+        </article>
+        <div class="col-md-4 d-flex flex-column">
+          <div class="d-flex flex-row border-bottom pb-2 side-article">
+            <div><img alt="article" src="./images/div8/side-article.jpg"></div>
+            <p>
+              Monkeys' Feces Helped Regenerate Rainforest Destroyed by Humans
+            </p>
+          </div>
+          <div class="d-flex flex-row border-bottom pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div8/side-article.jpg"></div>
+            <p>
+              Monkeys' Feces Helped Regenerate Rainforest Destroyed by Humans
+            </p>
+          </div>
+          <div class="d-flex flex-row pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div8/side-article.jpg"></div>
+            <p>
+              Monkeys' Feces Helped Regenerate Rainforest Destroyed by Humans
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part-9" class="container-fluid border-top pt-4 mt-4">
+      <h2 class="section-header">Culture</h2>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div9/article.jpg">
+          </div>
+          <h3>Woman Dined And Dashed At Sonic Restaurant, Says "This One's On God"</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div9/article.jpg">
+          </div>
+          <h3>Woman Dined And Dashed At Sonic Restaurant, Says "This One's On God"</h3>
+        </article>
+        <div class="col-md-4 d-flex flex-column">
+          <div class="d-flex flex-row border-bottom pb-2 side-article">
+            <div><img alt="article" src="./images/div9/side-article.png"></div>
+            <p>
+              'Orange is the New Black' Season 7 Release Date and Time, How to Watch
+            </p>
+          </div>
+          <div class="d-flex flex-row border-bottom pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div9/side-article.png"></div>
+            <p>
+              'Orange is the New Black' Season 7 Release Date and Time, How to Watch
+            </p>
+          </div>
+          <div class="d-flex flex-row pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div9/side-article.png"></div>
+            <p>
+              'Orange is the New Black' Season 7 Release Date and Time, How to Watch
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part-10" class="container-fluid border-top border-bottom pt-4 mt-4 pb-4 mb-4">
+      <h2 class="section-header">Sports</h2>
+      <div class="row">
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div10/article.jpg">
+          </div>
+          <h3>WGC-FedEx St. Jude Invitational: How to Watch, Live Stream, Course and Odds</h3>
+        </article>
+        <article class="article col-md-4">
+          <div>
+            <img alt="article" src="images/div10/article.jpg">
+          </div>
+          <h3>WGC-FedEx St. Jude Invitational: How to Watch, Live Stream, Course and Odds</h3>
+        </article>
+        <div class="col-md-4 d-flex flex-column">
+          <div class="d-flex flex-row border-bottom pb-2 side-article">
+            <div><img alt="article" src="./images/div10/side-article.jpg"></div>
+            <p>
+              WGC-FedEx St. Jude Invitational: Best Outsider Tips and Picks U.S.
+            </p>
+          </div>
+          <div class="d-flex flex-row border-bottom pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div10/side-article.jpg"></div>
+            <p>
+              WGC-FedEx St. Jude Invitational: Best Outsider Tips and Picks
+            </p>
+          </div>
+          <div class="d-flex flex-row pb-2 mt-2 side-article">
+            <div><img alt="article" src="./images/div10/side-article.jpg"></div>
+            <p>
+              WGC-FedEx St. Jude Invitational: Best Outsider Tips and Picks
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part-11" class="container-fluid pb-4 border-bottom">
+      <div class="row">
+        <div class="col-lg-7 col-xl-8 mb-4 container-fluid">
+          <h2 class="section-header">SUBSCRIBE</h2>
+          <div id="part-11-first-dev" class="row">
+            <div id="part-11-magazine-pics" class=" col-md-5 col-xl-4">
+              <img alt="article" src="images/div11/mag-1.jpg">
+              <img alt="article" src="images/div11/mag-2.jpg">
+            </div>
+            <div class="part-11-magazine-subscribe pb-4 col-md-7 col-xl-8">
+              <h3 class="part11-header mt-4">
+                In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+              </h3>
+              <p class="part11-paragraph">
+                All Access + Weekly Delivery.<br />
+                Choose A Membership That's Perfect for You!
+              </p>
+              <button class="mag-button">
+                sign up <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-xl-4 container-fluid">
+          <h2 class="section-header">NEWSLETTER</h2>
+          <div class="row ml-1">
+            <div id="part-11-img" class="col-md-4 col-lg-4">
+            </div>
+            <div id="part11-briefing" class="col-md-5 offset-md-1 col-lg-8 offset-lg-0">
+              <h3 class="part11-header ">
+                Daily Briefing
+              </h3>
+              <p class="part11-paragraph">
+                Take back your inbox. Sign up for our newsletter and start making sense of the world around you.
+              </p>
+              <button class="mag-button">
+                sign up <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="pb-4 pt-4 border-bottom container-fluid">
+    <div class="pb-2 border-bottom d-flex flex-column flex-md-row justify-content-md-between align-items-baseline ">
+      <div class="d-flex align-items-baseline flex-column flex-md-row">
+        <img id="footer-logo" alt="logo" class="mr-1" src="./images/logo-red.svg">
+        <span id="copyright">© 2019 NEWSWEEK</span>
+      </div>
+      <div id="footer-social-media" class="">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tumblr"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+    <div id="footer-links" class="row">
+      <ul class="col-lg-8 d-flex flex-wrap mt-2">
+        <li class="border-right">About Us</li>
+        <li class="border-right">Corrections</li>
+        <li class="border-right">Contact Us</li>
+        <li class="border-right">Editorial Guidelines</li>
+        <li class="border-right">Advertise</li>
+        <li class="border-right">Copyright</li>
+        <li class="border-right">Terms & Conditions</li>
+        <li class="border-right">Privacy Policy</li>
+        <li class="border-right">Cookie Policy</li>
+        <li class="border-right">Terms of Sale</li>
+        <li class="border-right">Archive</li>
+        <li class="border-right">Announcements</li>
+        <li class="border-right">Consent preferences</li>
+      </ul>
+      <div class="col-lg-4 mt-2">
+        <p id="editions">Editions:</p>
+        <ul class=" d-flex flex-wrap ">
+          <li class="border-right">U.S. Edition</li>
+          <li class="border-right">日本</li>
+          <li class="border-right">한국</li>
+          <li class="border-right">Pakistan</li>
+          <li class="border-right">Polska</li>
+          <li class="border-right">România</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/javascript.js"></script>
+</body>
+
 </html>

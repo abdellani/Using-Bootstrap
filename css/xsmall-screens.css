@@ -1,0 +1,16 @@
+
+#more-stories > article > div >img{
+  width: 135px;
+
+}
+
+#last-news article div img{
+  width: 135px;
+}
+
+
+.side-article img {
+  height: 90px;
+  width: 135px;
+
+}

@@ -1,0 +1,58 @@
+#last-news article div img{
+  width: 258px;
+}
+#more-stories > article > div > img {
+  width: 258px;
+}
+
+#part-2 > div:first-child > article:first-child img{
+  height: 100%;
+} 
+#part-2 img{
+  height:100%;
+} 
+
+#part-2 article h3{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.side-article img {
+  height: 172px;
+  width: 258px;
+
+}
+.part11-header{
+  text-align: center;
+  font-size: 20px;
+}
+.part11-paragraph{
+  text-align: center;
+}
+#part-11 .mag-button{
+  display: block;
+  margin: auto;
+}
+#part-11-magazine-pics img:first-child{
+  display: block;
+  margin: auto;
+  margin-top: 20px; 
+
+}
+
+#part-11-magazine-pics img:last-child{
+  display: block;
+  position: relative;
+  display: block;
+  margin: auto;
+  top:0;
+  left:20px;
+  margin-top: -200px;
+}
+
+#part-11-img{
+  height: 160px;
+}
+#part-11 > div > div:nth-of-type(2) > div {
+  height: auto;
+}
